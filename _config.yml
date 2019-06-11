@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://samberic.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: samba_code
 github_username:  samberic
+disqus_shortname: samberic
 
 # Build settings
 markdown: kramdown
