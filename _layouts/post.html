@@ -4,6 +4,11 @@ layout: default
 
 comments: true
 ---
+<style>
+    #disqus_thread{
+        padding: 30px;
+    }
+</style>
 <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
   <div class="col-4 sm-width-full mt-1 border-top-thin ">
@@ -14,10 +19,13 @@ comments: true
       {{ content }}
   </div>
 
+<div class="container mx-auto px-2 py-2 clearfix">
+  {% include previous-next.html %}
+</div>
 </article>
   <div id="disqus_thread"></div>
 <script>
-
+  
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -40,9 +48,6 @@ s.setAttribute('data-timestamp', +new Date());
 </article>
 
 
-<div class="container mx-auto px-2 py-2 clearfix">
-  {% include previous-next.html %}
-</div>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141757315-1"></script>
 <script>
