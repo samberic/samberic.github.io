@@ -1,0 +1,19 @@
+#!/bin/bash
+# Create a new post for a Jekyll blog.
+
+FILETILE=$(echo "$1" | tr " " "-" | tr '[]' '[]')
+POSTDATE=$(\date +"%Y-%m-%d")
+POSTNAME=$POSTDATE-$FILETILE.md
+POSTBODY="---
+layout:     post
+title:      $1
+date:       $POSTDATE $(\date +"%H:%M:%S")
+summary:
+categories:
+---"
+
+cat <<EOF >> $POSTNAME
+$POSTBODY
+EOF
+
+open "$POSTNAME"

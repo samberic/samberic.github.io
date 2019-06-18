@@ -11,20 +11,37 @@ comments: true
     a{
       text-decoration: underline;
     }
+    .h0{
+      font-size: 100px;
+    }
+    .course{
+      padding: 60px;
+      font-size: 30px;
+      background: #ff00002b;
+    }
+    svg{
+      background: black;
+    }
+    .twitterz{
+      padding: 10px;
+    }
 </style>
 <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
   <div class="col-4 sm-width-full mt-1 border-top-thin ">
     <p class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+    <a href="https://twitter.com/samba_code?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @samba_code</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
   <div class="prose" itemprop="articleBody">
       {{ content }}
   </div>
 
-
-  <div class="prose bold" >
-      <em>I hope you enjoyed this post! Whilst you're here, check out my course on learning TDD in Java. It's a concise and hands on tutorial with full source code provided, hosted at Udemy. <br/> <a href="https://www.udemy.com/learn-tdd-in-java/?couponCode=BLOGCODE">Click here to learn TDD!</a></em>
+ <div class="table twitterz">
+      
+<a href="https://twitter.com/samba_code?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @samba_code</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+  <div class="prose bold course" >
+      I hope you enjoyed this post! Whilst you're here, check out my course on learning TDD in Java. It's a concise and hands on tutorial with full source code provided, hosted at Udemy. <br/> <a href="https://www.udemy.com/learn-tdd-in-java/?couponCode=BLOGCODE">Click here to learn TDD!</a>
   </div>
 
 <div class="container mx-auto px-2 py-2 clearfix">
